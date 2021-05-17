@@ -1,9 +1,22 @@
 # Cryptr with Flask API
 
-## [01 Create a Flask project](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/01-create-flask-project)
+## 01 - Configuration
 
-## [02 Add your cryptr credentials](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/02-add-your-cryptr-credentials)
+🛠️️ First, create a directory for your project and go to that directory
 
-## [03 Validate access tokens](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/03-validate-access-tokens)
+```bash
+mkdir cryptr-flask-api-sample
+cd cryptr-flask-api-sample
+```
 
-## [04 Protect API Endpoints](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/04-protect-api-endpoints)
+🛠️️ Next, create the virtual environment with the virtual env command, and a name for your virtual environment. We can specify which version of Python we want to use. Here, it is Python 3.
+
+```bash
+virtualenv env -p python3
+```
+
+That creates a new directory called env, with all of the Python requirements to run that virtual environment.
+
+🛠️️ Activate the virtual environment, with the following command: `. env/bin/activate`
+
+[Next](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/02-add-your-cryptr-credentials)
