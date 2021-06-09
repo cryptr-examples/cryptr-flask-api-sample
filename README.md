@@ -1,22 +1,15 @@
 # Cryptr with Flask API
 
-## 01 - Configuration
+## 02 - Add your Cryptr credentials
 
-🛠️️ First, create a directory for your project and go to that directory
-
-```bash
-mkdir cryptr-flask-api-sample
-cd cryptr-flask-api-sample
-```
-
-🛠️️ Next, create the virtual environment with the virtual env command, and a name for your virtual environment. We can specify which version of Python we want to use. Here, it is Python 3.
+🛠️️ Create your configuration file with the variables that you obtained previously (you can retrieve them in your Cryptr application). Don't forget to replace `YOUR_DOMAIN` with your own domain:
 
 ```bash
-virtualenv env -p python3
+echo "CRYPTR_AUDIENCE='http://localhost:8081'
+CRYPTR_BASE_URL='https://auth.cryptr.eu'
+CRYPTR_TENANT_DOMAIN='YOUR_DOMAIN'" >> config.py
 ```
 
-That creates a new directory called env, with all of the Python requirements to run that virtual environment.
+Note: __If you are from the EU, you must add `https://auth.cryptr.eu/` in the `CRYPTR_BASE_URL` variable, and if you are from the US, you must add `https://auth.cryptr.us/` in the same variable.__
 
-🛠️️ Activate the virtual environment, with the following command: `. env/bin/activate`
-
-[Next](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/02-add-your-cryptr-credentials)
+[Next](https://github.com/cryptr-examples/cryptr-flask-api-sample/tree/03-validate-access-tokens)
