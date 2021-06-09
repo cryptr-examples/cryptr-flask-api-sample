@@ -98,6 +98,9 @@ def validate_token(token, rsa_key):
                "description": "Unable to find appropriate key"}, 401)
 
 @app.route('/api/v1/courses')
+@cross_origin(headers=["Content-Type", "Authorization"])
+@requires_auth
+
 def index():
    return jsonify([
        {
